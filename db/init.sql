@@ -29,23 +29,23 @@ CREATE TABLE words (
 
 INSERT INTO words (english_word, greek_word)
 VALUES
-('area', 'περιοχή'),
-('book', 'βίβλιο'),
-('philosophy', 'φιλοσοφία'),
-('ethics', 'ήθικη'),
-('country', 'κράτος'),
-('family', 'οικογένεια'),
-('government', 'κυβέρνυση'),
-('mother', 'μητέρα'),
-('father', 'πατέρα'),
-('child', 'παιδί'),
-('I think', 'σκέφτομαι'),
-('I eat', 'τρώω'),
-('I go', 'πηγαίνω'),
-('I try', 'προσπαθώ'),
-('I speak', 'μιλάω')
-('I laugh', 'γελάω')
-('I leave', 'φεύγω')
-('I see', 'βλέπω')
-('I hear', 'ακούω')
-('I smell', 'μυρίζω')
+('area', 'περιοχή (periohEE)'),
+('book', 'βιβλίο (vivlEEo)'),
+('philosophy', 'φιλοσοφία (filosofEEa)'),
+('ethics', 'ήθικη (EEtheekee)'),
+('country', 'κράτος (krAhtos)'),
+('family', 'οικογένεια (eekoyEnia)'),
+('government', 'κυβέρνυση (keevErnisi)'),
+('mother', 'μητέρα (meetEra)'),
+('father', 'πατέρα (patEra)'),
+('child', 'παιδί (pethEE)'),
+('I think', 'σκέφτομαι (skEftomeh'),
+('I eat', 'τρώω (tro)'),
+('I go', 'πηγαίνω (peegEno)'),
+('I try', 'προσπαθώ (prospathO)'),
+('I speak', 'μιλάω (meelAow)')
+('I laugh', 'γελάω (yellAow)')
+('I leave', 'φεύγω (fEvgo)')
+('I see', 'βλέπω (vlEpo)')
+('I hear', 'ακούω (akOO-o)')
+('I smell', 'μυρίζω (meerEEzo)')
