@@ -43,9 +43,9 @@ VALUES
 ('I eat', 'τρώω (tro)'),
 ('I go', 'πηγαίνω (peegEno)'),
 ('I try', 'προσπαθώ (prospathO)'),
-('I speak', 'μιλάω (meelAow)')
-('I laugh', 'γελάω (yellAow)')
-('I leave', 'φεύγω (fEvgo)')
-('I see', 'βλέπω (vlEpo)')
-('I hear', 'ακούω (akOO-o)')
+('I speak', 'μιλάω (meelAow)'),
+('I laugh', 'γελάω (yellAow)'),
+('I leave', 'φεύγω (fEvgo)'),
+('I see', 'βλέπω (vlEpo)'),
+('I hear', 'ακούω (akOO-o)'),
 ('I smell', 'μυρίζω (meerEEzo)')
