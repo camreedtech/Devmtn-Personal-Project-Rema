@@ -21,10 +21,6 @@ CREATE TABLE study (
   greek TEXT
 );
 
-INSERT INTO study (english_word, greek_word)
-VALUES
-()
-
 CREATE TABLE words (
   word_id SERIAL PRIMARY KEY,
   english TEXT,
