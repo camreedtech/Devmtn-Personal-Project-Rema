@@ -4,3 +4,18 @@
 //store func that will get vocab words
 // will need to get user id off req.session 
 
+module.exports = {
+
+    getAllWords: async (req,res) => {
+        const 
+    },
+
+    getUserStudyWords: async (req, res) => {
+
+    },
+
+    getVocabWords: async (req,res) => {
+        
+    }
+
+}
