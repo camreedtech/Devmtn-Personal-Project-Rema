@@ -10,14 +10,14 @@ import Home from './Home';
 import Study from './Study';
 import Vocab from './Vocab';
 
-function App() {
-  return (
-    <div className="App">
+// function App() {
+//   return (
+//     <div className="App">
     
     
-    </div>
-  );
-}
+//     </div>
+//   );
+// }
 
 export default App;
 
@@ -36,8 +36,8 @@ ReactDOM.render(
     </Switch>
   </Router>
 
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  // <React.StrictMode>
+  //   <App />
+  // </React.StrictMode>
+  // document.getElementById('root')
 );

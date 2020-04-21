@@ -24,7 +24,7 @@ massive({
         rejectUnauthorized: false
     }
 }).then(db => {
-    console.log('connected to db')
+    console.log('Connected to db')
     app.set('db, db')
 }).catch( err => console.log(err));
 
@@ -32,7 +32,7 @@ massive({
 app.post('/auth/signin', signin);
 app.post('/auth/register', register);
 app.get('/auth/signout', signout);
-app.get('/auth/user_session', userSession);
+app.get('/auth/user_session', userSession); //localhost:3001/auth/user_session
 
 //HOME/VOCAB-VIEW//
 app.get('/api/words'); //store all words on redux
@@ -45,4 +45,6 @@ app.delete('/api/words/:id')
 // //VOCAB-VIEW//           IT'S DOING SAME THING AS HOME VIEW SO I DON'T NEED TO WRITE TWICE BUT HERE FOR REFERENCE
 // app.get('/api/words'); 
 
+
+const port = 4500;
 app.listen(SERVER_PORT, () => console.log(`Listening on port ${SERVER_PORT}`));
