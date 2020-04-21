@@ -35,14 +35,13 @@ app.get('/auth/signout', signout);
 app.get('/auth/user_session', userSession);
 
 //HOME-VIEW//
-
+app.get('/home');
 
 //STUDY-VIEW//
-app.post('/study')
-app.put('/study/word:/id')
-app.
+app.get('/study')
+app.get('/study/word:/id')
 
 //VOCAB-VIEW//
-
+app.get('/vocab');
 
 app.listen(SERVER_PORT, () => console.log(`Listening on port ${SERVER_PORT}`));
