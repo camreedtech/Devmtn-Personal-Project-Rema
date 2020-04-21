@@ -4,7 +4,7 @@ const session = require('express-session');
 const massive = require('massive');
 
 const {CONNECTION_STRING, SERVER_PORT, SESSION_SECRET} = process.env;
-const {signin, register, signout, userSession} = require('./controller.authCtrl');
+const {signin, register, signout, userSession} = require('./controller/authCtrl');
 
 const app = express();
 app.use(express.json());
@@ -28,9 +28,21 @@ massive({
     app.set('db, db')
 }).catch( err => console.log(err));
 
+//AUTH//
 app.post('/auth/signin', signin);
 app.post('/auth/register', register);
 app.get('/auth/signout', signout);
 app.get('/auth/user_session', userSession);
 
-app.listen(SERVER_PORT, () => console.log(`Server listening on port ${SERVER_PORT}`));
+//HOME-VIEW//
+
+
+//STUDY-VIEW//
+app.post('/study')
+app.put('/study/word:/id')
+app.
+
+//VOCAB-VIEW//
+
+
+app.listen(SERVER_PORT, () => console.log(`Listening on port ${SERVER_PORT}`));

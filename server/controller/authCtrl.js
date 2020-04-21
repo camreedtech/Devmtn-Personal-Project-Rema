@@ -41,7 +41,7 @@ module.exports = {
         }
     },
 
-    singout: (req,res) => {
+    signout: (req,res) => {
         req.session.destroy();
         res.sendStatus(200)
     },
