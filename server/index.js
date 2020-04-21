@@ -29,22 +29,18 @@ massive({
 }).catch( err => console.log(err));
 
 //AUTH//
-app.post('/auth/signin', signin);
-app.post('/auth/register', register);
-app.get('/auth/signout', signout);
-app.get('/auth/user_session', userSession); //localhost:3001/auth/user_session
+app.post('/auth/signin', signin); // "could not get any response"
+app.post('/auth/register', register); // "could not get any response"
+app.get('/auth/signout', signout); // tested and good
+app.get('/auth/user_session', userSession); // tested and good 
 
 //HOME/VOCAB-VIEW//
-app.get('/api/words'); //store all words on redux
+app.get('/api/words'); //store all words on redux // shows html & 'cannot GET /api/study' probably cuz there's nothing in table
 
 //STUDY-VIEW//
-app.get('/api/study')
-app.post('/api/words/:id')
-app.delete('/api/words/:id')
-
-// //VOCAB-VIEW//           IT'S DOING SAME THING AS HOME VIEW SO I DON'T NEED TO WRITE TWICE BUT HERE FOR REFERENCE
-// app.get('/api/words'); 
-
+app.get('/api/study') //same as above
+app.post('/api/words/:id') //shows html & 'cannot POST /api/words
+app.delete('/api/words/:id') // shows html & 'cannot DELETE /api/words
 
 const port = 4500;
 app.listen(SERVER_PORT, () => console.log(`Listening on port ${SERVER_PORT}`));
