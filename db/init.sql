@@ -1,3 +1,6 @@
+DROP TABLE IF EXISTS study;
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS words;
 
 CREATE TABLE users (
   user_id SERIAL PRIMARY KEY,
@@ -15,7 +18,8 @@ VALUES
 CREATE TABLE study (
   word_id SERIAL PRIMARY KEY,
   english TEXT,
-  greek TEXT
+  greek TEXT,
+  user_id INT REFERENCES users(user_id)
 );
 
 CREATE TABLE words (

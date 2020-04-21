@@ -35,13 +35,14 @@ app.get('/auth/signout', signout);
 app.get('/auth/user_session', userSession);
 
 //HOME-VIEW//
-app.get('/home');
+app.get('/api/words'); //store all words on redux
 
 //STUDY-VIEW//
-app.get('/study')
-app.get('/study/word:/id')
+app.get('/api/study')
+app.post('/api/')
+app.delete('/api')
 
 //VOCAB-VIEW//
-app.get('/vocab');
+app.get('/api/words');
 
 app.listen(SERVER_PORT, () => console.log(`Listening on port ${SERVER_PORT}`));
