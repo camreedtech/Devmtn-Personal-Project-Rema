@@ -41,18 +41,24 @@ module.exports = {
     },
 
     addWord: async (req,res) => { // this should be used from the home and vocab page
-        try {
-
-        } catch {
-
+        //do I need next for this function?
+        try { const db = req.app.get('db')
+        const {words} = req.body // is the destructured word correct? what should I use or can use? 
+        const {user_id} = req.session.user
+        const word = await db.words // check this line too
+        res.status(200).send(words)
+        } catch (error) {
+            console.log('error adding word', error)
+            res.status(500).send(error)
         }
     },
 
     deleteWord: async (req, res) => { // this should be used from the study page
         try {
 
-        } catch {
-
+        } catch (error) {
+            console.log('error deleting word', error)
+            res.status(500).send(error)
         }
     }
 
