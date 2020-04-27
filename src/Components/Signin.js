@@ -32,6 +32,13 @@ class Signin extends React.Component {
             <div className='Signin-container'>
                 <form onSubmit={this.signinHandler}>
                     <input
+                        placeholder='email'
+                        type='text'
+                        name='email'
+                        value={this.state.email}
+                        onChange={(e) => this.changeHandler(e)}
+                    />
+                    <input
                         placeholder="password"
                         type="text"
                         name="password"
