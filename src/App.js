@@ -1,22 +1,20 @@
 import React from 'react';
 import './reset.css'
-import {HashRouter as Router, Route, Switch} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 import './index.css';
 import store from './Redux/store';
+import Landing from './Landing';
 import Signin from './Signin';
 import Register from './Register';
 import Header from './Components/Header';
 import Home from './Home';
 import Study from './Study';
 import Vocab from './Vocab';
-import { connect } from 'react-redux';
 
-class App extends React.Component {
-componentDidMount() {
-  this.props.requestUserData()
-}
 
-render() {
+const App = () => {
+
+render() 
   return(
     <div className="App">
     <Header />
@@ -32,7 +30,6 @@ render() {
   </Router>
     </div>
   )
-}
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(app);
+export default App;
