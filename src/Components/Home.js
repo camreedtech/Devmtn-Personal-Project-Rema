@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import './Home.css';
 
+// Math.random() somewhere in here 
+
 class Home extends Component {
     render () {
         return (

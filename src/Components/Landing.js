@@ -6,9 +6,10 @@ class Home extends Component {
         return (
             <div className="App">
                 <div className="home-main">
+                    {/* <img  */}
                     <h2>RΣMA</h2>
-                    <h3>"Quote on language from ancient Greek philosopher"</h3>
-
+                    <h3>"The roots of education are bitter, but the fruit is sweet. - Aristotle"</h3>
+                    <button className='signin-button'>SIGN IN</button> <button className='register-button'>REGISTER</button>
                 </div>
             </div>
         )
