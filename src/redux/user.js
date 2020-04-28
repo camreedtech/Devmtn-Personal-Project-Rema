@@ -75,6 +75,8 @@ export default function(state = initialState, action) {
     }
 }
 
+
+////ACTION CREATORS/////
 export function register(userInfo) {
     return {
         type: REGISTER_USER,
