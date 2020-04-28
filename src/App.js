@@ -19,6 +19,7 @@ class App extends React.Component {
 render() {
   return(
     <div className="App">
+     {/* place header component  */}
     <Router>
       <Switch>
         <Route exact path="/" component={Landing}/>
