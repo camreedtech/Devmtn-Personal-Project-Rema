@@ -11,6 +11,7 @@ import Home from './Home';
 import Study from './Study';
 import Vocab from './Vocab';
 import { connect } from 'react-redux';
+import Header from './Components/Header';
 
 class App extends React.Component {
   componentDidMount() {
@@ -19,7 +20,7 @@ class App extends React.Component {
 render() {
   return(
     <div className="App">
-     {/* place header component  */}
+    <Header />
     <Router>
       <Switch>
         <Route exact path="/" component={Landing}/>
