@@ -5,8 +5,10 @@ class Home extends Component {
     render () {
         return (
             <div className="App">
-                <div className="App-header">
-                    <h2>Welcome to the Home page</h2>
+                <div className="home-main">
+                    <h2>RΣMA</h2>
+                    <h3>"Quote on language from ancient Greek philosopher"</h3>
+
                 </div>
             </div>
         )
