@@ -5,9 +5,9 @@ const Header = () => {
     return (
         <header className='header-main'>
             <h2>RΣMA</h2>
-            <h3>Home</h3>
-            <h3>Study</h3>
-            <h3>Vocab List</h3>
+            <link1>Home</link1>
+            <link2>Study</link2>
+            <link3>Vocab List</link3>
         </header>
     )
 }
