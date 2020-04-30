@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS study;
+DROP TABLE IF EXISTS saved_words;
 DROP TABLE IF EXISTS users;
 DROP TABLE IF EXISTS words;
 
@@ -14,20 +14,13 @@ VALUES
 ('TheRepublic@TheCave.org'),
 ('PhilosophyIzKool@VirtueEthics.com');
 
---have endpoint that runs study query 
--- insert word id(comes form front end) and user id (comes from req.session) into study table 
-
-CREATE TABLE study (
-  study_id SERIAL PRIMARY KEY,
-  word_id INT REFERENCES words(word_id),
-  user_id INT REFERENCES users(user_id)
-);
-
 CREATE TABLE saved_words (
 saved_words_id SERIAL PRIMARY KEY,
 user_id INT REFERENCES users(user_id),
 word_id INT REFERENCES words(word_id)
 );
+
+INSERT INTO saved_words 
 
 CREATE TABLE words (
   word_id SERIAL PRIMARY KEY,

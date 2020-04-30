@@ -1,0 +1,1 @@
+UPDATE users SET hashed_password = $1 WHERE user_id = $2;

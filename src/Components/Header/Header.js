@@ -8,6 +8,7 @@ const Header = () => {
             <link1>Home</link1>
             <link2>Study</link2>
             <link3>Vocab List</link3>
+            <select id='settings'>Settings</select>
         </header>
     )
 }
