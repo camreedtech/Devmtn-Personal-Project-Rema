@@ -3,22 +3,20 @@ import './reset.css'
 import {Route, Switch} from 'react-router-dom';
 import './index.css';
 import store from './Redux/store';
-import Landing from './Landing';
+import Landing from './Components/Landing';
 import Signin from './Signin';
 import Register from './Register';
-import Header from './Components/Header';
-import Home from './Home';
+import Header from './Components/Header/Header';
+import Home from './Components/Home';
 import Study from './Study';
 import Vocab from './Vocab';
 
 
-const App = () => {
-
-render() 
-  return(
+const App = () => { 
+  return (
     <div className="App">
     <Header />
-    <Router>
+    {/* <Router> */}
       <Switch>
         <Route exact path="/" component={Landing}/>
         <Route path="/Signin" component={Signin}/>
@@ -27,7 +25,7 @@ render()
         <Route path="/Study" component={Study}/>
         <Route path="/Vocab" component={Vocab}/>
       </Switch>
-  </Router>
+  {/* </Router> */}
     </div>
   )
 };
