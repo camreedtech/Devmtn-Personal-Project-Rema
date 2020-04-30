@@ -9,8 +9,8 @@ class Landing extends Component {
                 {/* <img className='landing-background-img' */}
 
                 <div className="landing-main">
-                    <h2>RΣMA</h2>
-                    <h3>"The roots of education are bitter, but the fruit is sweet. - Aristotle"</h3>
+                    <h1>RΣMA</h1>
+                    <p>"The roots of education are bitter, but the fruit is sweet. - Aristotle"</p>
                     <button className='signin-button' onClick={} >Sign In</button> 
                     <button className='register-button' onClick={} >Register</button>
                 </div>
