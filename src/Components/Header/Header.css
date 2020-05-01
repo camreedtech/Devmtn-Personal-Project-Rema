@@ -1,0 +1,15 @@
+
+
+.header-main {
+    width: 100vw;
+    height: 80px;
+    background-color: rgba(27, 27, 27, 0.26);
+    color: White;
+    display: flex;
+    position: relative;
+}
+
+h2 {
+    position: absolute;
+    left: 15px;
+}

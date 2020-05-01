@@ -53,7 +53,7 @@ class Home extends Component {
 
                 </div>
 
-                <button className="study-add-word-button">Add Word to Study List</button>
+                {/* <button className="study-add-word-button">Add Word to Study List</button> */}
                 <div className='study-footer'></div>
 
             </div>
