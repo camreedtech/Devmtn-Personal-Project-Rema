@@ -1,3 +1,41 @@
 .home-main {
+    width: 100vw;
+    height: 80%vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.word-container {
+   
+    border: 2px;
+    border-color: rgba(230, 230, 230, 0.657);
     
+
+    font-style: ;
+    
+}
+
+.home-footer {
+    width: 100vw;
+    height: 60px;
+    background-color: rgba(230, 230, 230, 0.657);
+    bottom: 0;
+    position: absolute;
+}
+
+.next-word-button {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(39, 39, 39);
+    background-color: rgba(230, 230, 230, 0.534);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   border-radius: 5px;
+   border: none;
+   width: 200px;
+   height: 25px;
+  
 }

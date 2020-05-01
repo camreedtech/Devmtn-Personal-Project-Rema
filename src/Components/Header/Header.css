@@ -1,14 +1,27 @@
-
-
 .header-main {
     width: 100vw;
     height: 80px;
-    background-color: rgba(27, 27, 27, 0.26);
-    color: White;
     display: flex;
-    position: relative;
+    justify-content: flex-end;
+    background-color: rgba(230, 230, 230, 0.657);
 }
 
-h2 {
-    left: 15px;
+.app-name {
+    font-weight: 700;
+   font-family: "'Quicksand', sans-serif";
+   font-size: 25px;
+   letter-spacing: 10px;
+   color: rgb(39, 39, 39);
+
+   margin: 15px;
+   margin-top: 27px;
+   position: absolute;
+   left: 15px;
 }
+
+.home-links {
+    margin: 15px;
+    margin-top: 27px;
+}
+
+

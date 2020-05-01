@@ -32,10 +32,10 @@ class Home extends Component {
     render () {
         
         return (
-            <div className="App">
+            <div className="home-base">
                 
             <Header/>
-                <div className='home-main'>
+                <div className='word-container'>
                
                     {
                     this.state.words[this.state.index] && this.state.greek
@@ -48,13 +48,14 @@ class Home extends Component {
                     :
                     <p>Loading...</p> 
                     }
-
-                    <button className='next-word-button' onClick={this.nextWord}>Next Word</button>
-
                 </div>
 
+                <button className='next-word-button' onClick={this.nextWord}>Next Word</button>
+
+                
+
                 {/* <button className="study-add-word-button">Add Word to Study List</button> */}
-                <div className='study-footer'></div>
+                <div className='home-footer'></div>
 
             </div>
         )
