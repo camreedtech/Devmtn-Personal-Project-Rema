@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Signin from './Signin';
 import Register from './Register';
 import {Redirect} from 'react-router-dom';
-import './Auth.css';
+// import './Auth.css';
 
 class Auth extends Component {
     constructor(props) {
@@ -22,7 +22,7 @@ class Auth extends Component {
     }
 
     toggleRedirect = () => {
-        let {Redirect} = this.state
+        let {redirect} = this.state
         this.setState({
             redirect: !redirect 
         })

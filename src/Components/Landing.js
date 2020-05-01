@@ -1,35 +1,34 @@
 import React, {Component} from 'react';
 import './Landing.css';
+import Auth from './Auth/Auth';
 
 class Landing extends Component {
     constructor () {
         super();
         this.state = {
-            auth: 'signin'
+            auth: false
         }
-
-
-
+        this.toggleAuth = this.toggleAuth.bind(this)
     }
+toggleAuth() {
+    let {auth} = this.state
+    this.setState({auth: !auth})
+}
+
     render () {
         return (
             <div className="App">
 
                 {/* <img className='landing-background-img' */}
 
-                {
-                this.state.auth === 'signin' 
-                ? 
-                <div>This is login</div> 
-                : 
-                <div>This is register</div>
-                }
+
 
                 <div className="landing-main">
                     <h1>RΣMA</h1>
                     <p>"The roots of education are bitter, but the fruit is sweet. -Aristotle"</p>
-                    <button className='signin-button' onClick={() => this.setState({auth: 'signin'})} >Sign In</button> 
-                    <button className='register-button' onClick={() => this.setState({auth: 'register'})} >Register</button>
+                    <button className='signin-button' onClick={this.toggleAuth} >Sign In/Register</button> 
+                    {this.state.auth && <Auth/>}
+                    {/* <button className='register-button' onClick={() => this.setState({auth: 'register'})} >Register</button> */}
                 </div>
 
             </div>

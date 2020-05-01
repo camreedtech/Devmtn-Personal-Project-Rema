@@ -44,7 +44,7 @@ class Register extends React.Component {
                     />
                     <button className='signin-button'>Register</button>
                 </form>
-                <button className='clicl-register-button' onClick={this.props.display}>Click to Register</button>
+                <button className='click-register-button' onClick={this.props.toggle}>Need to Signin?</button>
             </div>
         );
     }

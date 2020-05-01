@@ -48,7 +48,7 @@ class Signin extends React.Component {
                     <button className='signin-button'>Sign In</button>
                 </form>
                 {this.props.location ? null : 
-                <button className='click-register-button' onClick={this.props.display}>Click to Register</button>
+                <button className='click-register-button' onClick={this.props.toggle}>Need to Register?</button>
                 }
             </div>
         );
