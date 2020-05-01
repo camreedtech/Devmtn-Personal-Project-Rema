@@ -15,35 +15,35 @@
 }
 
 h1 {
+    float: top;
    font-weight: 700;
-   font-family: Arial, Helvetica, sans-serif;
-   font-size: 50px;
+   font-family: "'Quicksand', sans-serif";
+   font-size: 75px;
    letter-spacing: 10px;
-   /* font-style: italic; */
-   color: rgba(61, 61, 61, 0.87);
-   /* line-height: 0px; */
+   color: rgb(39, 39, 39);
+   
 }
 
 p {
     font-family: serif;
-    font-family: sans-serif Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-variant: small-caps;
     color: rgb(41, 41, 41);
-    line-height: 300px;
     font-size: 20px;
+    float: top;
+    margin-bottom: 200px;
     
 }
 
 .signin-register-button {
-    font-family: sans-serif;
-    font-family: sans-serif Arial, Helvetica, sans-serif;
-    color: rgb(41, 41, 41);
-    border-radius: 15px;
-    border: none;
-    /* padding: 10px; */
-    width: 200px;
-    height: 25px;
+   font-family: Arial, Helvetica, sans-serif;
+   color: rgb(3, 13, 73);
+   border-radius: 5px;
+   border: none;
+   width: 200px;
+   height: 25px;
    margin-left: auto;
    margin-right: auto;
+   background-color: rgba(230, 230, 230, 0.657);
 }
 
