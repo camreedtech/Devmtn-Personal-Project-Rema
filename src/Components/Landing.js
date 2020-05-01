@@ -25,7 +25,7 @@ toggleAuth() {
 
                     <h1>RΣMA</h1>
 
-                    <p>"The roots of education are bitter, but the fruit is sweet." -Aristotle</p>
+                    <p>The roots of education are bitter, but the fruit is sweet - Aristotle</p>
 
                     <button className='signin-register-button' onClick={this.toggleAuth} >SIGN IN / REGISTER</button> 
                     {this.state.auth && <Auth/>}
