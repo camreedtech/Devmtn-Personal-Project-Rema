@@ -19,7 +19,7 @@ export default function(state = initialState, action) {
                 loading: true 
             }
         
-        case REGISTER_USER = '_FULFILLED':
+        case REGISTER_USER + '_FULFILLED':
             return {
                 ...state, 
                 data: payload.data,

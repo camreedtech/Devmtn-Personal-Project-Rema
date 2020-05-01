@@ -9,7 +9,7 @@ module.exports = {
     getAllWords: async (req,res) => { // this is for my home page 
         try {
             const db = req.app.get('db') 
-            const words = await db.words.get_words 
+            const words = await db.words.get_words() 
             res.status(200).send(words)
          } catch (error) {
             console.log('error getting words', error)

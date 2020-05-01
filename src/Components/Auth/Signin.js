@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {signin} from '../../redux/reducers/index.js';
+import {signin} from '../../redux/user';
 
 
 class Signin extends React.Component {

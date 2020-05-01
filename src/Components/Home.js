@@ -1,18 +1,44 @@
 import React, {Component} from 'react';
 import './Home.css';
+import axios from 'axios';
 
-// Math.random() somewhere in here 
+
 
 class Home extends Component {
+    constructor() {
+        super();
+        this.state = {
+            index: 0,      
+            words: []
+        }
+    }
+
+    //func that will handleClick when I click to show next word and updates state of index+1
+
+
+    componentDidMount() {
+        axios.get('/api/words').then((res) => this.setState({words: res.data}))
+    }
+
+    toggleHandler()
+
     render () {
+        // console.log(this.state.index)
         return (
             <div className="App">
-                 <div className="App-header">
-                    <h2>Welcome to the Home page</h2>
-                </div>
-                <div>
-                    <button className='left-arrow-button'> 'left-arrow' </button>
-                    {/* I need to figure out what kind of button can go here that will react onClick and will display different words */}
+                
+                <div className='home-main'>
+               
+                    {this.state.words[this.state.index]
+                    ?
+                    <p>{this.state.words[this.state.index].greek_word}</p>   
+                    :
+                    <p>Loading...</p> 
+                    }
+
+                    
+                
+                    <button ></button>
                 </div>
                 <button className="study-add-word-button">Add Word to Study List</button>
                 <div className='study-footer'></div>
