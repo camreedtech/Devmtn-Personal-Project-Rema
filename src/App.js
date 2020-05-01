@@ -4,12 +4,12 @@ import {Route, Switch} from 'react-router-dom';
 import './index.css';
 import store from './Redux/store';
 import Landing from './Components/Landing';
-import Signin from './Signin';
-import Register from './Register';
+import Signin from './Components/Auth/Signin';
+import Register from './Components/Auth/Register';
 import Header from './Components/Header/Header';
 import Home from './Components/Home';
-import Study from './Study';
-import Vocab from './Vocab';
+import Study from './Components/Study';
+import Vocab from './Components/Vocab';
 
 
 const App = () => { 
