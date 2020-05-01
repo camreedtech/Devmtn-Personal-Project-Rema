@@ -25,6 +25,7 @@ class Register extends React.Component {
             [e.target.name]: e.target.value,
         });
     }
+    
     render() {
         return(
             <div className='register-container'>
