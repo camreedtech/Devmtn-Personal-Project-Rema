@@ -3,8 +3,6 @@ import './Home.css';
 import axios from 'axios';
 import Header from './Header/Header';
 
-
-
 class Home extends Component {
     constructor() {
         super();
@@ -16,9 +14,6 @@ class Home extends Component {
         this.toggleHandler = this.toggleHandler.bind(this)
         this.nextWord = this.nextWord.bind(this)
     } 
-
-    //func that will handleClick when I click to show next word and updates state of index+1
-
 
     componentDidMount() {
         axios.get('/api/words').then((res) => this.setState({words: res.data}))
@@ -35,13 +30,15 @@ class Home extends Component {
     }
 
     render () {
-        // console.log(this.state.index)
+        
         return (
             <div className="App">
                 
+            <Header/>
                 <div className='home-main'>
                
-                    {this.state.words[this.state.index] && this.state.greek
+                    {
+                    this.state.words[this.state.index] && this.state.greek
                     ?
                     <p onClick={this.toggleHandler}>{this.state.words[this.state.index].greek_word}</p>   
                     : 
@@ -52,15 +49,16 @@ class Home extends Component {
                     <p>Loading...</p> 
                     }
 
-                    
-                
-                    <button className='NEXT-WORD-BUTTON' onClick={this.nextWord}>Next Word</button>
+                    <button className='next-word-button' onClick={this.nextWord}>Next Word</button>
+
                 </div>
+
                 <button className="study-add-word-button">Add Word to Study List</button>
                 <div className='study-footer'></div>
+
             </div>
         )
     }
 }
 
-export default Home;
+export default Home;   

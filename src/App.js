@@ -6,7 +6,7 @@ import './index.css';
 import Landing from './Components/Landing';
 import Signin from './Components/Auth/Signin';
 import Register from './Components/Auth/Register';
-import Header from './Components/Header/Header';
+// import Header from './Components/Header/Header';
 import Home from './Components/Home';
 import Study from './Components/Study';
 import Vocab from './Components/Vocab';
