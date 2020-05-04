@@ -10,13 +10,14 @@
 
 .main-div {
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: url("/home-bri.jpg");
-    
+    /* background-size: cover; */
+    background-position-y: center;
 }
 
 .word-container {
@@ -37,20 +38,20 @@ p {
     font-family: 'Times New Roman', Times, serif;
     font-variant: normal;
     font-size: 35px;
-    margin-bottom: center;
+    
 }
 
 .home-footer {
     width: 100vw;
     height: 40px;
-    background-color: rgba(230, 230, 230, 0.657);
+    background-color: rgb(230, 230, 230);
     bottom: 0;
-    position: absolute;
+    position: sticky;
 }
 
 .next-word-button {
     font-family: Arial, Helvetica, sans-serif;
-   color: rgb(3, 13, 73);
+   color: rgb(0, 0, 0);
    border-radius: 5px;
    border: none;
    width: 200px;
