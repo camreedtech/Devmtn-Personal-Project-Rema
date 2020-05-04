@@ -3,7 +3,7 @@
     height: 12vh;
     display: flex;
     justify-content: space-between;
-    background-color: rgba(13, 94, 175, 0.664);
+    background-color: rgb(14, 96, 177);
 }
 
 .app-name {

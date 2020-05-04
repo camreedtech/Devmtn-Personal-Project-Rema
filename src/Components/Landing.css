@@ -47,6 +47,7 @@ p1 {
    width: 200px;
    height: 25px;
    margin-bottom: auto;
-   background-color: rgba(13, 94, 175, 0.664);
+   /* background-color: rgb(13, 94, 175); */
+   background-color: rgba(19, 127, 236, 0.842);
 }
 
