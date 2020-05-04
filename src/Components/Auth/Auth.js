@@ -32,7 +32,7 @@ class Auth extends Component {
         const {display, redirect} = this.state
 
         if (redirect) {
-            return <Redirect to='/dash'/>
+            return <Redirect to='/home'/>
         }
 
         return (

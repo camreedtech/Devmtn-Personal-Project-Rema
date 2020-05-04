@@ -31,22 +31,26 @@ class Register extends React.Component {
             <div className='register-container'>
                 <form onSubmit={this.registerHandler}>
                     <input
+                        className=""
                         placeholder='email'
                         type='text'
                         name='email'
                         value={this.state.email}
-                        onChange={(e) => this.changHandler}
+                        onChange={(e) => this.changeHandler(e)}
                     />
                     <input
                         placeholder='password'
                         type='text'
                         name='password'
+                        value={this.state.password}
                         onChange={(e) => this.changeHandler(e)}
                     />
                     <button className='signin-button'>Register</button>
                 </form>
+
                 <button className='click-register-button' onClick={this.props.toggle}>Need to Signin?</button>
             </div>
+
         );
     }
 }

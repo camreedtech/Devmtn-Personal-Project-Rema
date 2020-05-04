@@ -15,6 +15,7 @@ class Signin extends React.Component {
     }
     signinHandler(e) {
         e.preventDefault();
+        console.log(this.state)
         this.props
             .signin(this.state)
             .then(() => {

@@ -87,7 +87,7 @@ export function register(userInfo) {
 export function signin(userInfo) {
     return {
         type: SIGNIN_USER,
-        payload: axios.post('/auth/login', userInfo)
+        payload: axios.post('/auth/signin', userInfo)
     }
 }
 
