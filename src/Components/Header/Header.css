@@ -2,8 +2,8 @@
     width: 100vw;
     height: 12vh;
     display: flex;
-    justify-content: flex-end;
-    background-color: #0D5EAF;
+    justify-content: space-between;
+    background-color: rgba(13, 94, 175, 0.664);
 }
 
 .app-name {
@@ -11,17 +11,26 @@
    font-family: "'Quicksand', sans-serif";
    font-size: 25px;
    letter-spacing: 10px;
-   color: white;
-
-   margin: 15px;
+   color:rgb(39, 39, 39);
+    background-color: green;
+   /* margin: 15px;
    margin-top: 27px;
    position: absolute;
-   left: 15px;
+   left: 15px; */
 }
 
 .home-links {
-    margin: 15px;
-    margin-top: 27px;
-    word-spacing: 10px;
     font-family: sans-serif;
+    display: flex;
+    width: 300px;
+    background-color: red;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.links {
+    color: white;
+    background-color: blue;
+  
 }

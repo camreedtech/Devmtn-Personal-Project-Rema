@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './Home.css';
 import axios from 'axios';
 import Header from './Header/Header';
+import Footer from './Footer/Footer';
 
 class Home extends Component {
     constructor() {
@@ -58,8 +59,8 @@ class Home extends Component {
                 
 
                 {/* <button className="study-add-word-button">Add Word to Study List</button> */}
-                <div className='home-footer'></div>
 
+                <Footer/>
             </div>
         )
     }

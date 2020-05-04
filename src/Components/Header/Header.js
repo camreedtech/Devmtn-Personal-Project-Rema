@@ -10,11 +10,10 @@ const Header = () => {
                  <h2>RΣMA</h2>
             </div>
             <div className='home-links'>
-                <Link>Home</Link>
-                <Link>Study</Link>
-                <Link>Vocab List</Link>
-                <select id='settings'>Settings</select>
-                    <option value='update-password'>Update Password</option>
+                <Link className='links'>Home</Link>
+                <Link className='links'>Study</Link>
+                <Link className='links'>Vocab</Link>
+                <Link className='links'>Settings</Link>
             </div>
         </header>
     )
