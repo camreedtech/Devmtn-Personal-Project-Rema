@@ -40,15 +40,6 @@ p {
     font-size: 35px;
     
 }
-
-.home-footer {
-    width: 100vw;
-    height: 40px;
-    background-color: rgb(230, 230, 230);
-    bottom: 0;
-    position: sticky;
-}
-
 .next-word-button {
     font-family: Arial, Helvetica, sans-serif;
    color: rgb(0, 0, 0);
@@ -57,4 +48,12 @@ p {
    width: 200px;
    height: 25px;
   
+}
+
+.home-footer {
+    width: 100vw;
+    height: 40px;
+    background-color: #0D5EAF;
+    bottom: 0;
+    position: sticky;
 }

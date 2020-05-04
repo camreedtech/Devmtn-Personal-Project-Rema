@@ -3,7 +3,7 @@
     height: 12vh;
     display: flex;
     justify-content: flex-end;
-    background-color: rgba(230, 230, 230, 0.657);
+    background-color: #0D5EAF;
 }
 
 .app-name {
@@ -11,7 +11,7 @@
    font-family: "'Quicksand', sans-serif";
    font-size: 25px;
    letter-spacing: 10px;
-   color: rgb(39, 39, 39);
+   color: white;
 
    margin: 15px;
    margin-top: 27px;

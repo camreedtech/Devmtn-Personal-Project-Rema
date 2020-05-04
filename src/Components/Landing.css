@@ -5,13 +5,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* flex-direction: column; */
     background-image: url("/landing-bri2.jpg");
     background-size: cover;
 }
 
 .landing-main {
     text-align: center;
-    
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 h1 {
@@ -37,13 +41,12 @@ p1 {
 
 .signin-register-button {
    font-family: Arial, Helvetica, sans-serif;
-   color: rgb(3, 13, 73);
+   color: whitesmoke;
    border-radius: 5px;
    border: none;
    width: 200px;
    height: 25px;
-   margin-left: auto;
-   margin-right: auto;
-   background-color: rgba(230, 230, 230, 0.657);
+   margin-bottom: auto;
+   background-color: rgba(13, 94, 175, 0.664);
 }
 
