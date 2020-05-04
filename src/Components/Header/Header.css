@@ -12,25 +12,28 @@
    font-size: 25px;
    letter-spacing: 10px;
    color:rgb(39, 39, 39);
-    background-color: green;
-   /* margin: 15px;
-   margin-top: 27px;
-   position: absolute;
-   left: 15px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px;
+  
 }
 
 .home-links {
     font-family: sans-serif;
     display: flex;
     width: 300px;
-    background-color: red;
     justify-content: space-between;
     align-items: center;
-    margin-right: 15px;
+    margin-right: 25px;
+
+    /* background-color: red; */
+
 }
 
 .links {
     color: white;
-    background-color: blue;
+
+    /* background-color: blue; */
   
 }
