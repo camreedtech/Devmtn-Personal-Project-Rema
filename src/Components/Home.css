@@ -17,42 +17,46 @@
 }
 
 .main-div {
-    /* width: 100vw;
-    height: 100vh;
+    width: 100vw;
+    height: 80vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("/home-bri"); */
+    /* background-image: url("/home-bri"); */
 }
 
 .word-container {
-   /* width: 80vw;
-   height: 400px;
+   width: 400px;
+   height: 200px;
     border: 2px;
-    border-color: rgba(230, 230, 230, 0.657); */
-    /* font-style: ; */
+    border-color: rgba(230, 230, 230, 0.657);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
     
+    
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-variant: normal;
 }
 
 .home-footer {
-    /* width: 100vw;
-    height: 60px;
+    width: 100vw;
+    height: 40px;
     background-color: rgba(230, 230, 230, 0.657);
     bottom: 0;
-    position: absolute; */
+    position: absolute;
 }
 
 .next-word-button {
-    /* font-family: Arial, Helvetica, sans-serif;
-    color: rgb(39, 39, 39);
-    background-color: rgba(230, 230, 230, 0.534);
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+   color: rgb(3, 13, 73);
    border-radius: 5px;
    border: none;
    width: 200px;
-   height: 25px; */
+   height: 25px;
   
 }
