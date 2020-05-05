@@ -24,7 +24,11 @@ class Password extends Component {
 
     render () {
         return (
+
+            <div className='update-main'>
             
+            <Header/>
+
             <div className='update-password-container'> 
 
                 <input
@@ -36,10 +40,12 @@ class Password extends Component {
                 />
 
                 <button className='update-password-button' onClick = {() => this.props.updatePassword(this.state.newPassword)}>Update Password</button>     
-
+                {/* // check above line's code inside onclick  */}
             </div>
 
+            <Footer/>
 
+            </div>
         )
     }
 }
