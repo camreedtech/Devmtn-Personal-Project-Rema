@@ -3,40 +3,45 @@ import './updatePassword.css';
 import {connect} from 'react-redux';
 import axios from 'axios';
 
-
-// Change handler and update password funcs
-// state 
-
 class Password extends Component {
     constructor() {
         super();
         this.state = {
-            password: ''
+            newPassword: ''
         }
-
+        this.changeHandler = this.changeHandler.bind(this)
     }
 
-    changeHandler() {
-        
+    changeHandler(e) {
+        this.setState({
+            newPassword: e.target.value
+        })
     }
 
     updatePassword() {
         axios.put(`/auth/update_password`).then(() => console.log('Password updated!'))
-
     }
 
     render () {
         return (
             
-            <div> 
+            <div className='update-password-container'> 
 
+                <input
+                className='new-password-input'
+                type='text'
+                name='newPassword'
+                value={this.state.newPassword}
+                onChange={(e) => this.changeHandler(e)}
+                />
 
+                <button className='update-password-button' onClick = {() => this.props.updatePassword(this.state.newPassword)}>Update Password</button>     
 
             </div>
+
+
         )
     }
-
-
 }
 
 export default Password;
