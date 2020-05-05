@@ -46,8 +46,7 @@ module.exports = {
         try { 
             const db = req.app.get('db')
             const {id} = req.params
-            const {user_id} = req.session.user
-            const words = await db.words.delete_word({user_id, id})
+            const words = await db.words.delete_word(id)
             res.status(200).send(words)
         } catch (error) {
             console.log('error deleting word', error)

@@ -4,7 +4,6 @@ import {connect} from 'react-redux';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import axios from 'axios';
-import Home from '/Components/Home';
 
 class Study extends Component {
     constructor() {
@@ -16,48 +15,53 @@ class Study extends Component {
     }
 
     componentDidMount() {
+        this.getStudyWords()
+    }
+
+    deleteWord(id) {
+        axios.delete(`/api/words/${id}`).then(() => this.getStudyWords()) 
+    }
+
+    getStudyWords() {
         axios.get('/api/study').then((res) => 
         this.setState({words: res.data}) 
         )
     }
 
-    deleteWord(id) {
-        axios.delete(`/api/words/${id}`).then(() => console.log('Word deleted!')) 
-    }
-
-
     render () {
-        const mappedWords = this.words.map(elem => {
-            return <div key={elem.id}
-                <Home id={elem.id}/> 
-            })
+        const mappedWords = this.state.words.map((elem, i) => {
+            return <div key={i}>
+                     <p> {elem.english_word} </p>
+                     <p> {elem.greek_word} </p>
+                     <button className='delete-word-button' onClick={() => this.deleteWord(elem.word_id)}>Delete Word</button>
+                    </div>
+        })
 
         return (
             <div className="study-main">
 
-            <Header/>
+                <Header/>
                 <div className="vocab-study">
                     
 
                         <div className='study-words'>Study Words (Λέξεις Μελέτης)</div>
-                    
-
                             <div className='study-word-list-container'>
 
                             {mappedWords}
 
-                            <button className='delete-word-button' onClick={() => this.deleteWord(this.state.words.word_id)}>Delete Word</button> 
+                             
                         
-
-                    </div>
-                    
-                    
                 </div>
-            <Footer/>
+                </div>    
+                    
+                <Footer/>
+            </div>
             
         )
-    })
+    
     }
 }
 
 export default Study;   
+                    
+
