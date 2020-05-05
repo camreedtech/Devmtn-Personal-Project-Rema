@@ -39,10 +39,9 @@ class Study extends Component {
 
                     <div className='study-word-list-container'>
 
-                        {/* code here */}
                         {/* reference nodb for mapping the words  */}
 
-                        <button className='delete-word-button' onClick={() => this.deleteWord()}>Delete Word</button> 
+                        {/* <button className='delete-word-button' onClick={() => this.deleteWord(this.state.words.word_id)}>Delete Word</button>  */}
                         
 
                     </div>

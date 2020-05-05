@@ -63,6 +63,7 @@ module.exports = {
     },
 
     updatePassword: async (req, res) => {
+        console.log(req.session)
         try {
             const db = req.app.get('db')
             let { password } = req.body
@@ -73,8 +74,6 @@ module.exports = {
 
             let response = await db.auth.update_users([hash, user_id])
             let user = response[0]
-    
-            delete user.password
     
             req.session.user = user
             res.send(req.session.user)

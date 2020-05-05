@@ -20,8 +20,10 @@ class Password extends Component {
         })
     }
 
-    updatePassword() {
-        axios.put(`/auth/update_password`).then(() => console.log('Password updated!'))
+    updatePassword(newPassword) {
+        axios.put(`/auth/update_password`, {
+            password: newPassword
+        }).then(() => console.log('Password updated!'))
     }
 
     render () {
@@ -37,13 +39,15 @@ class Password extends Component {
                 <input
                 className='new-password-input'
                 type='text'
+                placeholder='New Password'
                 name='newPassword'
                 value={this.state.newPassword}
                 onChange={(e) => this.changeHandler(e)}
                 />
 
-                <button className='update-password-button' onClick = {() => this.props.updatePassword(this.state.newPassword)}>Update Password</button>     
-                {/* // check above line's code inside onclick  */}
+                <button className='update-password-button' onClick = {() => this.updatePassword(this.state.newPassword)}>Update Password</button> 
+                  
+            
             </div>
 
             <Footer/>
