@@ -31,13 +31,23 @@ class Study extends Component {
             <div className="study-main">
 
             <Header/>
-                <div className="vocab-study">Vocab Study</div>
-                <div className='study-word-list-container'>
+                <div className="vocab-study">
                     
-                    
-                <button className='delete-word-button' onClick={() => this.deleteWord()}>Delete Word</button> 
-                {/* reference nodb for mapping the words  */}
 
+                        <div className='vocab-words'>Vocab Words</div>
+                    
+
+                    <div className='study-word-list-container'>
+
+                        {/* code here */}
+                        {/* reference nodb for mapping the words  */}
+
+                        <button className='delete-word-button' onClick={() => this.deleteWord()}>Delete Word</button> 
+                        
+
+                    </div>
+                    
+                    
                 </div>
             <Footer/>
             </div>

@@ -1,17 +1,10 @@
-.header-main {
-    width: 100vw;
-    height: 12vh;
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(14, 96, 177);
-}
 
 /* ///////////////////  */
 
 .study-main {
     display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 	justify-content: center;
 	align-items: stretch;
 	align-content: center;
@@ -30,9 +23,29 @@
     background-attachment: fixed;
 }
 
+/* .filler-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.vocab-words {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: rgb(214, 212, 212);
+    width: 80vw;
+    height: 25px;
+    margin: 0;
+    border: 2px;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 0px, 0px, 15px, 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.322), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .study-word-list-container {
-    width: 400px;
-   height: 200px;
+    width: 80vw;
+    height: 55vh;
     border: 2px;
     border-color: rgba(230, 230, 230, 0.657);
     display: flex;
@@ -40,30 +53,20 @@
     justify-content: center; 
     background-color: white;
     border: 2px;
-    border-radius: 15px;
+    border-radius: 0px, 0px, 15px, 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.study-delete-button {
+.delete-word-button {
     font-family: Arial, Helvetica, sans-serif;
-   color: rgb(0, 0, 0);
-   border-radius: 5px;
-   border: none;
-   width: 200px;
-   height: 25px;
-  margin: 25px;
-}
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: none;
+    width: 100px;
+    height: 25px;
+    margin: 25px;
+    border: 2px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.322), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-
-
-/* ///////////////////// */
-
-.home-footer {
-    width: 100vw;
-    height: 40px;
-    /* background-color: rgb(13, 94, 175); */
-    background-color: rgb(14, 96, 177);
-    bottom: 0;
-    position: sticky;
-    z-index: 3;
 }
