@@ -17,11 +17,11 @@ const App = () => {
     <div className="App">
       <Switch>
         <Route exact path="/" component={Landing}/>
-        <Route path="/Signin" component={Signin}/>
-        <Route path="/Register" component={Register}/>
+        {/* <Route path="/Signin" component={Signin}/>
+        <Route path="/Register" component={Register}/> */}
         <Route path="/Home" component={Home}/>
         <Route path="/Study" component={Study}/>
-        <Route path="/Vocab" component={Vocab}/>
+        {/* <Route path="/Vocab" component={Vocab}/> */}
       </Switch>
     </div>
   )

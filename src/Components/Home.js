@@ -30,12 +30,12 @@ class Home extends Component {
         this.setState({index: index + 1})
     }
 
-    addWord() {
-        
+    addWord(id) {
+        axios.post(`/api/words/${id}`).then(() => console.log('Word added!'))
     }
 
     render () {
-        
+        console.log(this.state.words)
         return (
             <div className="home-base">
                 
@@ -56,15 +56,14 @@ class Home extends Component {
                     :
                     <p>Loading...</p> 
                     }
+                    
                 </div>
 
                 <button className='next-word-button' onClick={this.nextWord}>Next Word</button>
 
-                <button className='add-word-button'>Add Word to Study List</button>
-                </div>   
-                
+                <button className='add-word-button' onClick={() => this.addWord(this.state.words[this.state.index].word_id)}>Add Word to Study List</button>
 
-                {/* <button className="study-add-word-button">Add Word to Study List</button> */}
+                </div>   
 
                 <Footer/>
             </div>

@@ -32,9 +32,9 @@ module.exports = {
     addWord: async (req,res) => { // this should be used from the home and vocab page
         //do I need next for this function?
         try { const db = req.app.get('db')
-            const words1 = req.body  
+            const {id} = req.params  
             const {user_id} = req.session.user
-            const words = await db.words.add_word({user_id, id}) 
+            const words = await db.words.add_word([user_id, id]) 
             res.status(200).send(words)
         } catch (error) {
             console.log('error adding word', error)
