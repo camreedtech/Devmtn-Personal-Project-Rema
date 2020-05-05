@@ -30,10 +30,10 @@ class Study extends Component {
 
     render () {
         const mappedWords = this.state.words.map((elem, i) => {
-            return <div key={i}>
-                     <p> {elem.english_word} </p>
-                     <p> {elem.greek_word} </p>
-                     <button className='delete-word-button' onClick={() => this.deleteWord(elem.word_id)}>Delete Word</button>
+            return <div className='word-box' key={i}>
+                     <p className='english-word'> {elem.english_word} </p>
+                     <p className='greek-word'> {elem.greek_word} </p>
+                     <button className='study-delete-word-button' onClick={() => this.deleteWord(elem.word_id)}>Delete Word</button>
                     </div>
         })
 
@@ -44,14 +44,10 @@ class Study extends Component {
                 <div className="vocab-study">
                     
 
-                        <div className='study-words'>Study Words (Λέξεις Μελέτης)</div>
-                            <div className='study-word-list-container'>
-
-                            {mappedWords}
-
-                             
-                        
-                </div>
+                    <div className='study-words'>Study Words (Λέξεις Μελέτης)</div>
+                         <div className='study-word-list-container'>
+                             {mappedWords}
+                        </div>
                 </div>    
                     
                 <Footer/>
@@ -63,5 +59,8 @@ class Study extends Component {
 }
 
 export default Study;   
+
+                             
+                        
                     
 

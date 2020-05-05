@@ -1,13 +1,33 @@
 
 /* ///////////////////  */
 
+.word-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    word-spacing: 10px;
+    width: 80vw;
+    height: 55vh;
+}
+
+.english-word {
+    font-size: 15px;
+}
+
+.greek-word {
+    font-size: 15px;
+}
+
 .study-main {
     display: flex;
 	flex-direction: column;
 	/* flex-wrap: wrap; */
 	justify-content: center;
 	align-items: stretch;
-	align-content: center;
+    align-content: center;
+    background-image: url("/study-bri.jpg");
+
 }
 
 .vocab-study {
@@ -17,7 +37,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("/home-bri.jpg");
+    /* background-image: url("/study-bri.jpg"); */
     /* background-size: cover; */
     background-position-y: center;
     background-attachment: fixed;
@@ -53,16 +73,15 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.delete-word-button {
+.study-delete-word-button {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(0, 0, 0);
     border-radius: 5px;
     border: none;
     width: 100px;
     height: 25px;
-    margin: 25px;
+    margin: 5px;
     border: 2px;
     border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.322), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
