@@ -55,6 +55,8 @@ class Home extends Component {
                 </div>
 
                 <button className='next-word-button' onClick={this.nextWord}>Next Word</button>
+
+                <button className='add-word-button'>Add Word to Study List</button>
                 </div>   
                 
 

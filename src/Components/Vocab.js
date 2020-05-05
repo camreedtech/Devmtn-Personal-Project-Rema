@@ -1,24 +1,55 @@
 import React, {Component} from 'react';
-import './Vocab.css';
-
+import './Home.css';
+import axios from 'axios';
+import Header from './Header/Header';
+import Footer from './Footer/Footer';
 
 class Vocab extends Component {
+    constructor() {
+        super();
+        this.state = {
+            index: 0,      
+            words: [],
+            greek: true
+        }
+
+    } 
+
+    componentDidMount() {
+        axios.get('/api/words').then((res) => this.setState({words: res.data}))
+    }
+
     render () {
+        
         return (
-            <div className="App">
-                <div className="master-vocab-list-header">Master Vocab List</div>
-                <div className='master-vocab-list-container'>
-                    
-                    <ul>
-                        <li></li> 
-                        {/* All of the DB words go into the above list */}
-                    </ul>
-                    
-                </div>
+            <div className="vocab-base">
                 
-            </div>
+            <Header/>
+
+            <div className='vocab-main-div'>
+                
+                <div className='vocab-word-container'>
+               
+                    {
+                    this.state.words
+                    ?
+                    <p>{this.state.words}</p>   
+                    : 
+                    <p>Loading...</p> 
+                    }
+                </div>
+
+                
+                    <button className='delete-word-button'
+                
+                
+                
+                <Footer/>
+                
+                </div>
+                </div>
         )
     }
 }
 
-export default Vocab;    
+export default Vocab;  
