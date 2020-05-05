@@ -4,6 +4,7 @@ import {connect} from 'react-redux';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import axios from 'axios';
+import Home from '/Components/Home';
 
 class Study extends Component {
     constructor() {
@@ -26,7 +27,11 @@ class Study extends Component {
 
 
     render () {
-        console.log(this.state)
+        const mappedWords = this.words.map(elem => {
+            return <div key={elem.id}
+                <Home id={elem.id}/> 
+            })
+
         return (
             <div className="study-main">
 
@@ -34,14 +39,14 @@ class Study extends Component {
                 <div className="vocab-study">
                     
 
-                        <div className='vocab-words'>Vocab Words</div>
+                        <div className='study-words'>Study Words (Λέξεις Μελέτης)</div>
                     
 
-                    <div className='study-word-list-container'>
+                            <div className='study-word-list-container'>
 
-                        {/* reference nodb for mapping the words  */}
+                            {mappedWords}
 
-                        {/* <button className='delete-word-button' onClick={() => this.deleteWord(this.state.words.word_id)}>Delete Word</button>  */}
+                            <button className='delete-word-button' onClick={() => this.deleteWord(this.state.words.word_id)}>Delete Word</button> 
                         
 
                     </div>
@@ -49,8 +54,9 @@ class Study extends Component {
                     
                 </div>
             <Footer/>
-            </div>
+            
         )
+    })
     }
 }
 
