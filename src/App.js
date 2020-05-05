@@ -6,7 +6,7 @@ import './index.css';
 import Landing from './Components/Landing';
 import Home from './Components/Home';
 import Study from './Components/Study';
-import Settings from './Components/Settings/Settings';
+import Settings from './Components/Settings/updatePassword';
 
 // import Vocab from './Components/Vocab';
 // import Signin from './Components/Auth/Signin';

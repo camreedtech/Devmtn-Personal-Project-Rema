@@ -7,13 +7,13 @@ const Header = () => {
     return (
         <header className='header-main'>
             <div className='app-name'>
-                 <h2>RΣMA</h2>
+                 <Link to='/Home' className='Title'>RΣMA</Link>
             </div>
             <div className='home-links'>
                 <Link to='/Home' className='links'>Home</Link>
                 <Link to='/Study' className='links'>Study</Link>
                 <Link to='/Vocab' className='links'>Vocab</Link>
-                <Link to='/Home' className='links'>Settings</Link>
+                <Link to='/Settings' className='links'>Settings</Link>
             </div>
         </header>
     )

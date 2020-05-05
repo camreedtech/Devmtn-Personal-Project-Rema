@@ -7,16 +7,21 @@
 }
 
 .app-name {
-    font-weight: 700;
-   font-family: "'Quicksand', sans-serif";
-   font-size: 25px;
-   letter-spacing: 10px;
-   color:rgb(39, 39, 39);
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.Title {
+    text-decoration: none;
+    font-weight: 700;
+    font-family: "'Quicksand', sans-serif";
+    font-size: 25px;
+    letter-spacing: 10px;
+    color:rgb(39, 39, 39);
     margin-left: 25px;
-  
+
+    
 }
 
 .home-links {

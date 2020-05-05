@@ -24,15 +24,15 @@
 .word-container {
    width: 400px;
    height: 200px;
-    border: 2px;
-    border-color: rgba(230, 230, 230, 0.657);
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    background-color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+   background-color: white;
+   border-color: rgba(230, 230, 230, 0.657);
     border: 2px;
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 20px;
 }
 
 p {
@@ -44,21 +44,27 @@ p {
 
 .next-word-button {
     font-family: Arial, Helvetica, sans-serif;
-   color: rgb(0, 0, 0);
-   border-radius: 5px;
-   border: none;
-   width: 200px;
-   height: 25px;
-  margin: 25px;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    height: 25px;
+    margin: 15px;
+    border-color: rgba(230, 230, 230, 0.657);
+    border: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .add-word-button {
     font-family: Arial, Helvetica, sans-serif;
-   color: rgb(0, 0, 0);
-   border-radius: 5px;
-   border: none;
-   width: 200px;
-   height: 25px;
-  margin: 25px;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    height: 25px;
+    margin: 25px;
+    border-color: rgba(230, 230, 230, 0.657);
+    border: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 

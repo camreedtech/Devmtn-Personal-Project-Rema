@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import './updatePassword.css';
 import {connect} from 'react-redux';
 import axios from 'axios';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 class Password extends Component {
     constructor() {
@@ -25,6 +27,7 @@ class Password extends Component {
     render () {
         return (
 
+            
             <div className='update-main'>
             
             <Header/>
