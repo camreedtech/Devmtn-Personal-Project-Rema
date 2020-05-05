@@ -1,27 +1,41 @@
 import React, {Component} from 'react';
 import './Study.css';
 import {connect} from 'react-redux';
+import Header from './Header/Header';
+import Footer from './Footer/Footer';
 
 class Study extends Component {
+    constructor() {
+        super();
+        this.state = {
+
+        }
+
+    }
+
+    deleteWord() {
+
+    }
+
+
     render () {
-        console.log(this.props)
+        // console.log(this.props)
         return (
-            <div className="App">
+            <div className="study-main">
+
+            <Header/>
                 <div className="vocab-study">Vocab Study</div>
                 <div className='study-word-list-container'>
-                    {/* <input> .filter() */}
-                    <ul>
-                        <li></li> 
-                        {/* The dynamic study greek/english word list goes into the above list */}
-                    </ul>
-                    <button className='study-delete-button' onClick="">Delete Word</button>
+                    
+                    {/* .filter() */}
+                    {/* Whatever Home comp. is sending as addWord goes here */}
+
+                    <button className='next-word-button' onClick={this.deleteWord}>Delete Word</button>
                 </div>
-                
+            <Footer/>
             </div>
         )
     }
 }
 
-const mapStateToProps = state => state;
-
-export default connect(mapStateToProps)(Study);    
+export default Study;   

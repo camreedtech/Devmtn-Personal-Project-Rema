@@ -30,6 +30,10 @@ class Home extends Component {
         this.setState({index: index + 1})
     }
 
+    addWord() {
+        
+    }
+
     render () {
         
         return (
