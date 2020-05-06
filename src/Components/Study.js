@@ -43,11 +43,11 @@ class Study extends Component {
                 <Header/>
                 <div className="vocab-study">
                     
-
                     <div className='study-words'>Study Words (Λέξεις Μελέτης)</div>
-                        <div className='study-word-list-container'>
-                            {mappedWords}
-                        </div>
+                    
+                    <div className='study-word-list-container'>
+                        {mappedWords}
+                    </div>
                 </div>    
                     
                 <Footer/>
@@ -59,6 +59,7 @@ class Study extends Component {
 }
 
 export default Study;   
+
 
                              
                         
