@@ -42,6 +42,8 @@ class Home extends Component {
             <Header/>
 
             <div className='main-div'>
+
+            <button className='next-word-button' onClick={this.nextWord}>Next Word</button>
                 
                 <div className='word-container'>
                
@@ -58,8 +60,6 @@ class Home extends Component {
                     }
                     
                 </div>
-
-                <button className='next-word-button' onClick={this.nextWord}>Next Word</button>
 
                 <button className='add-word-button' onClick={() => this.addWord(this.state.words[this.state.index].word_id)}>Add Word to Study List</button>
 

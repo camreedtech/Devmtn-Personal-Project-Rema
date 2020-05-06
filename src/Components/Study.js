@@ -31,8 +31,8 @@ class Study extends Component {
     render () {
         const mappedWords = this.state.words.map((elem, i) => {
             return <div className='word-box' key={i}>
-                     <p className='english-word'> {elem.english_word} </p>
-                     <p className='greek-word'> {elem.greek_word} </p>
+                     <p1 > {elem.english_word}, {elem.greek_word} </p1>
+                     {/* <p2 > {elem.greek_word} </p2> */}
                      <button className='study-delete-word-button' onClick={() => this.deleteWord(elem.word_id)}>Delete Word</button>
                     </div>
         })
@@ -45,8 +45,8 @@ class Study extends Component {
                     
 
                     <div className='study-words'>Study Words (Λέξεις Μελέτης)</div>
-                         <div className='study-word-list-container'>
-                             {mappedWords}
+                        <div className='study-word-list-container'>
+                            {mappedWords}
                         </div>
                 </div>    
                     
