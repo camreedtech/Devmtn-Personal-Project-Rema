@@ -21,8 +21,6 @@
     /* color:rgb(39, 39, 39); */
     color: white;
     margin-left: 25px;
-
-    
 }
 
 .home-links {
@@ -42,4 +40,10 @@
 
     /* background-color: blue; */
   
+}
+
+@media all and (max-width: 500px) {
+    .home-links {
+        
+    }
 }
