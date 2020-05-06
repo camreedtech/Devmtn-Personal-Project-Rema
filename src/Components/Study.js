@@ -31,7 +31,7 @@ class Study extends Component {
     render () {
         const mappedWords = this.state.words.map((elem, i) => {
             return <div className='word-box' key={i}>
-                     <p1 > {elem.english_word}, {elem.greek_word} </p1>
+                     <p5 > {elem.english_word}, {elem.greek_word} </p5>
                      {/* <p2 > {elem.greek_word} </p2> */}
                      <button className='study-delete-word-button' onClick={() => this.deleteWord(elem.word_id)}>Delete Word</button>
                     </div>
