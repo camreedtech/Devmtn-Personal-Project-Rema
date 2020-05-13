@@ -45,10 +45,11 @@ class Register extends React.Component {
                         value={this.state.password}
                         onChange={(e) => this.changeHandler(e)}
                     />
-                    <button className='signin-button'>Register</button>
+                    {/* <button className='signin-button'>Register</button> */}
+                    {/* <button className='first-register-button' >REGISTER</button> */}
                 </form>
 
-                <button className='click-register-button' onClick={this.props.toggle}>Need to Signin?</button>
+                {/* <button className='click-register-button' onClick={this.props.toggle}>Need to Signin?</button> */}
             </div>
 
         );

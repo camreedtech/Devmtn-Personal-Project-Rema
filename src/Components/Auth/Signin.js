@@ -46,11 +46,11 @@ class Signin extends React.Component {
                         value={this.state.password}
                         onChange={(e) => this.changeHandler(e)}
                     />
-                    <button className='signin-button'>Sign In</button>
+                    {/* <button className='first-signin-button'>Sign In</button> */}
                 </form>
-                {this.props.location ? null : 
+                {/* {this.props.location ? null : 
                 <button className='click-register-button' onClick={this.props.toggle}>Need to Register?</button>
-                }
+                } */}
             </div>
         );
     }

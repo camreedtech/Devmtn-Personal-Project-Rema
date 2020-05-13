@@ -39,8 +39,20 @@ p1 {
     
 }
 
-.signin-register-button {
+.signin-button {
    font-family: Arial, Helvetica, sans-serif;
+   color: whitesmoke;
+   border-radius: 5px;
+   border: none;
+   width: 200px;
+   height: 25px;
+   margin-bottom: 25px;
+   /* background-color: rgb(13, 94, 175); */
+   background-color: rgb(19, 127, 236);
+}
+
+.register-button {
+    font-family: Arial, Helvetica, sans-serif;
    color: whitesmoke;
    border-radius: 5px;
    border: none;
@@ -48,6 +60,6 @@ p1 {
    height: 25px;
    margin-bottom: auto;
    /* background-color: rgb(13, 94, 175); */
-   background-color: rgba(19, 127, 236, 0.842);
+   background-color: rgb(19, 127, 236);
 }
 
