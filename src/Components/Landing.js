@@ -47,5 +47,3 @@ toggleAuth() {
 } 
 
 export default Landing;
-
-
