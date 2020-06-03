@@ -5,6 +5,7 @@ import {signout} from '../../redux/reducers/' // check this line
 class Signout extends React.Component {
     constructor(props) {
         super(props)
+        
         this.signoutHandler = this.signoutHandler.bind(this)
     }
     signoutHandler(){
@@ -15,10 +16,7 @@ class Signout extends React.Component {
     render() {
         return(
             <div>
-                <button className='signout-button' onClick={this.signoutHandler}
-                >Signout</button>
-                <div className='Welcome-username'>Welcome, {this.props.user.data.email}
-                </div>
+                <button className='signout-button' onClick={this.signoutHandler}>Signout</button>
             </div>
         )
     }

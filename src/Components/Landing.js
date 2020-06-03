@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './Landing.css';
-import Auth from './Auth/Auth';
+// import Auth from './Auth/Auth';
 import Signin from './Auth/Signin';
 import Register from './Auth/Register';
 
@@ -14,8 +14,8 @@ class Landing extends Component {
             register: false
         }
         this.toggleAuth = this.toggleAuth.bind(this)
-        // this.toggleSignin = this.toggleSignin.bind(this)
-        // this.toggleRegister = this.toggleRegister.bind(this)
+        this.toggleSignin = this.toggleSignin.bind(this)
+        this.toggleRegister = this.toggleRegister.bind(this)
     }
 
 toggleAuth() {
