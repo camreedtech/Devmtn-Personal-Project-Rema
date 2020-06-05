@@ -5,14 +5,16 @@ import {signout} from '../../redux/reducers/' // check this line
 class Signout extends React.Component {
     constructor(props) {
         super(props)
-        
+
         this.signoutHandler = this.signoutHandler.bind(this)
     }
+
     signoutHandler(){
         this.props.signout().then(() => {
 
         }).catch(err => console.log('Error Signing out', err))
     }
+    
     render() {
         return(
             <div>
