@@ -23,6 +23,16 @@ toggleAuth() {
     this.setState({auth: !auth})
 }
 
+toggleSignin() {
+    let {signin} = this.state
+    this.setState({})
+}
+
+toggleRegister() {
+    let {register} = this.state
+    this.setState({})
+}
+
     render () {
         return (
             <div className="landing-base">
