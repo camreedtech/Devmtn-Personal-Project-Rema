@@ -12,6 +12,7 @@
     "express": "^4.17.1",
     "express-session": "^1.17.1",
     "massive": "^6.3.0",
+    "nodemon": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
@@ -43,7 +44,7 @@
   },
   "main": "server/index.js",
   "proxy": "http://localhost:4500",
-  "nodemonConfig":{
+  "nodemonConfig": {
     "ext": "js,sql",
     "ignore": [
       "src/",

@@ -17,10 +17,6 @@ p5 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* p2 {
-    font-size: 15px;
-} */
-
 .study-main {
     display: flex;
 	flex-direction: column;
@@ -59,6 +55,7 @@ p5 {
     padding-top: 8px;
     border-radius: 15px 15px 0px 0px ;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.322), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 100px;
 }
 
 .study-word-list-container {
@@ -73,6 +70,7 @@ p5 {
     border: 2px;
     border-radius: 0px 0px 15px 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: auto;
 }
 
 .study-delete-word-button {

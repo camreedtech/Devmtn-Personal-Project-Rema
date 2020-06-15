@@ -43,7 +43,7 @@
 }
 
 p {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-variant: normal;
     font-size: 35px;
     
@@ -60,6 +60,7 @@ p {
     border-color: rgba(230, 230, 230, 0.657);
     border: 2px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 150px;
 }
 
 .add-word-button {
@@ -73,5 +74,6 @@ p {
     border-color: rgba(230, 230, 230, 0.657);
     border: 2px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: auto;
 }
 

@@ -1,9 +1,3 @@
-// all the funcs that will run for the other endpoints besides AUTH
-//store func that will get study words
-//store func that will add a word
-//store func that will get vocab words
-// will need to get user id off req.session 
-
 module.exports = {
 
     getAllWords: async (req,res) => { // this is for my home page 
@@ -29,8 +23,7 @@ module.exports = {
         }  
     },
 
-    addWord: async (req,res) => { // this should be used from the home and vocab page
-        //do I need next for this function?
+    addWord: async (req,res) => { 
         try { const db = req.app.get('db')
             const {id} = req.params  
             const {user_id} = req.session.user

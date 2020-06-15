@@ -6,4 +6,11 @@
     bottom: 0;
     position: sticky;
     z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyr {
+    font-family: Arial, Helvetica, sans-serif;
 }

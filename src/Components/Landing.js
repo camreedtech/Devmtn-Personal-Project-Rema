@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './Landing.css';
-// import Auth from './Auth/Auth';
+import Auth from './Auth/Auth';
 import Signin from './Auth/Signin';
 import Register from './Auth/Register';
 
@@ -41,9 +41,9 @@ toggleRegister() {
 
                     <h1>RΣMA</h1>
 
-                    <p1>The roots of education are bitter, but the fruit is sweet - Aristotle</p1>
+                    <p1 className="quote">The roots of education are bitter, but the fruit is sweet - Aristotle</p1>
 
-                    <button className='signin-button' onClick={this.toggleSignin} >SIGN IN</button> 
+                    <button className='signin-button' onClick={this.toggleSignin}>SIGN IN</button> 
                     {this.state.auth && <Signin/>}
 
                     <button className='register-button' onClick={this.toggleRegister}>REGISTER</button>
